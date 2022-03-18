@@ -1,0 +1,12 @@
+.Footer {
+    padding: 24px 0;
+    position: relative;
+    & p {
+        position: absolute;
+        left: 40%;
+        font-size: 18px;
+        & button {
+            font-size: 18px;
+        }
+    }
+}

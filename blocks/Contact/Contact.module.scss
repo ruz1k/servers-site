@@ -1,0 +1,17 @@
+.ContactBlock {
+    border-bottom: 1px solid rgb(211, 211, 211);
+    padding-bottom: 48px;
+    & h3 {
+        margin-bottom: 32px;
+    }
+    & .ContactBlockSocial {
+        display: flex;
+        & .ContactBlockSocialItem {
+            display: flex;
+            margin-right: 48px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
