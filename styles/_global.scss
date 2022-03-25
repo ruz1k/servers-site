@@ -76,7 +76,7 @@ img {
     );
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 460px) {
     @include fontSizeMedia(
         (
             h1: 32px,

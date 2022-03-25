@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 
-import { serverImg, terminal } from '../../assets';
+import { serverImg, terminal } from '../../public';
 import styles from './MediaBank.module.scss';
 
 import { Modal } from '../../components';
@@ -15,6 +15,7 @@ const MediaBank = () => {
         }
         setModalVisible(!modalVisible);
     };
+
     return (
         <div className={styles.MediaBankBlock}>
             <h2>Фото и видео</h2>
