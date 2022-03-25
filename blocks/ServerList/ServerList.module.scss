@@ -48,3 +48,24 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .ServerListBlockWrapper {
+        display: flex;
+        flex-flow: wrap;
+    }
+    .ServerListBlockItem {
+        max-width: 320px;
+        width: 100%;
+        margin-bottom: 28px !important;
+        margin-right: 8px;
+        display: block !important;
+        &:nth-child(2n + 2) {
+            margin-right: 0;
+        }
+    }
+    .ServerListBlockItemPrice {
+        margin-bottom: 20px;
+        margin-right: 105px;
+    }
+}

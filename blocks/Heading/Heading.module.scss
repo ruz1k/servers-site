@@ -34,3 +34,25 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .HeadingBlock {
+        display: block;
+        margin-bottom: 24px;
+
+        & h1 {
+            margin-bottom: 16px;
+            max-width: 100%;
+        }
+        & .HeadingBlockBenefitsBlock {
+            max-width: 100%;
+            position: relative;
+        }
+
+        & .HeadingBlockTextContent {
+            & p {
+                font-size: 20px;
+            }
+        }
+    }
+}

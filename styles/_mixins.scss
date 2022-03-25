@@ -6,9 +6,27 @@
         padding: 16px;
         font-size: 16px;
         width: -webkit-fill-available;
-        transition: all 0.3s ease-in-out;
-        &:hover {
-            opacity: 0.6;
-        }
+    }
+}
+
+@mixin fontSizeMedia($map) {
+    h1 {
+        font-size: map-get($map, 'h1');
+    }
+
+    h2 {
+        font-size: map-get($map, 'h2');
+    }
+
+    h3 {
+        font-size: map-get($map, 'h3');
+    }
+
+    h4 {
+        font-size: map-get($map, 'h4');
+    }
+
+    h5 {
+        font-size: map-get($map, 'h5');
     }
 }

@@ -4,16 +4,58 @@
     & h2 {
         margin-bottom: 24px;
     }
+    & .MediaBankBlockWrapper {
+        display: flex;
+    }
     & .MediaBankBlockItem {
+        margin-right: 32px;
         & img {
             max-width: 600px !important;
             max-height: 300px !important;
             border-radius: 15px;
+            cursor: zoom-in;
         }
         & p {
             padding-top: 4px;
             font-size: 14px;
             opacity: 0.5;
+        }
+    }
+}
+
+.MediaBankModal {
+    background: none !important;
+    padding-bottom: 0 !important;
+    height: 100% !important;
+}
+
+@media screen and (max-width: 1024px) {
+    .MediaBankBlock {
+        & .MediaBankBlockItem {
+            margin-right: 32px;
+            & img {
+                max-width: 360px !important;
+                max-height: 300px !important;
+                border-radius: 15px;
+                cursor: zoom-in;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .MediaBankBlock {
+        & h2 {
+            margin-bottom: 24px;
+        }
+        & .MediaBankBlockWrapper {
+            display: block;
+        }
+        & .MediaBankBlockItem {
+            margin-bottom: 16px;
+        }
+        & svg {
+            fill: white !important;
         }
     }
 }

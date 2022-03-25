@@ -1,3 +1,7 @@
+/// Global
+$app-transition: all 0.3s ease-in-out;
+$app-opacity: 0.6;
+
 /// Body
 $app-font-family: 'Open Sans', sans-serif;
 $app-font-size: 16px;
@@ -18,6 +22,7 @@ $button-border: none;
 $button-bg: none;
 $button-outline: none;
 $button-cursor: pointer;
+$button-padding: 0;
 
 /// Image
 $img-object-fit: cover;

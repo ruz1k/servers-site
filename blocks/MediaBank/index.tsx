@@ -1,36 +1,54 @@
+import { useState } from 'react';
+import Image from 'next/image';
+
+import { serverImg, terminal } from '../../assets';
 import styles from './MediaBank.module.scss';
 
-import { serverImg } from '../../assets';
-import Image from 'next/image';
 import { Modal } from '../../components';
-import { useState } from 'react';
 
 const MediaBank = () => {
     const [modalVisible, setModalVisible] = useState(false);
-    const changeVisible = () => setModalVisible(!modalVisible);
+    const [src, setSrc] = useState({});
+    const changeVisible = (src?: StaticImageData) => {
+        if (src) {
+            setSrc(src);
+        }
+        setModalVisible(!modalVisible);
+    };
     return (
-        <>
-            <div className={styles.MediaBankBlock}>
-                <h2>Фото и видео</h2>
-
+        <div className={styles.MediaBankBlock}>
+            <h2>Фото и видео</h2>
+            <div className={styles.MediaBankBlockWrapper}>
                 <div className={styles.MediaBankBlockItem}>
                     <Image
-                        onClick={changeVisible}
+                        onClick={() => changeVisible(serverImg)}
                         src={serverImg}
                         alt="server image"
                     />
-                    <p>Как выглядит сервер в дата-центре</p>
+                    <p>Сервер в дата-центре.</p>
+                </div>
+                <div className={styles.MediaBankBlockItem}>
+                    <Image
+                        onClick={() => changeVisible(terminal)}
+                        src={terminal}
+                        alt="terminal image"
+                    />
+                    <p>Окно терминального сервера.</p>
                 </div>
             </div>
-            <Modal onClose={changeVisible} customVisible={modalVisible}>
+            <Modal
+                customClassName={styles.MediaBankModal}
+                onClose={changeVisible}
+                customVisible={modalVisible}
+            >
                 <Image
                     width="1200"
                     height="800"
-                    src={serverImg}
+                    src={src as string}
                     alt="server image"
                 />
             </Modal>
-        </>
+        </div>
     );
 };
 
