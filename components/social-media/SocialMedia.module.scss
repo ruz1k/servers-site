@@ -1,0 +1,16 @@
+.ContactBlockSocial {
+    display: flex;
+    & .ContactBlockSocialItem {
+        display: flex;
+        margin-right: 24px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    & button {
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}

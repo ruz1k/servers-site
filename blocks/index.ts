@@ -1,6 +1,6 @@
 import Heading from './Heading';
-import Information from './Information';
-import Contact from './Contact'
-import Footer from './Footer'
+import Footer from './Footer';
+import ServerList from './ServerList';
+import MediaBank from './MediaBank';
 
-export { Heading, Information, Contact, Footer };
+export { Heading, Footer, ServerList, MediaBank };

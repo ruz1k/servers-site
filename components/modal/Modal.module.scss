@@ -1,0 +1,63 @@
+@import '../../styles/mixins';
+@include submitButton('.ModalTriggerButton');
+
+.Modal {
+    position: fixed;
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    overflow-x: hidden;
+    background-color: rgba(31, 32, 41, 0.75);
+    & .ModalBody {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        padding-bottom: 20px;
+        background-color: #fff;
+        align-self: center;
+        width: 60vw;
+        height: 60%;
+        min-height: 400px;
+        min-width: 400px;
+    }
+    & img {
+        max-width: max-content !important;
+        max-height: max-content !important;
+    }
+    & .ModalCloseButton {
+        position: absolute;
+        right: 48px;
+        top: 16px;
+    }
+}
+
+.HelperModalSocial {
+    max-width: max-content;
+    margin: 0 auto;
+}
+
+.ContactModal {
+    width: max-content !important;
+    height: max-content !important;
+    min-height: max-content !important;
+    min-width: max-content !important;
+    padding: 32px;
+    & h3 {
+        margin-bottom: 16px;
+    }
+    & p {
+        margin-bottom: 24px;
+    }
+}

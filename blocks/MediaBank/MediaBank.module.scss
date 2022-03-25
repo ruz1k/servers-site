@@ -1,20 +1,19 @@
 .MediaBankBlock {
-    display: flex;
-    & img {
-        max-width: 600px;
-        max-height: 600px;
-        object-fit: cover;
-    }
-    & ul {
-        padding-left: 64px;
-        margin-bottom: 48px;
-        margin-top: 0;
-        font-size: 24px;
-    }
-    & li {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 64px;
+    & h2 {
         margin-bottom: 24px;
-        &:last-child {
-            margin-bottom: 0;
+    }
+    & .MediaBankBlockItem {
+        & img {
+            max-width: 600px !important;
+            max-height: 300px !important;
+            border-radius: 15px;
+        }
+        & p {
+            padding-top: 4px;
+            font-size: 14px;
+            opacity: 0.5;
         }
     }
 }

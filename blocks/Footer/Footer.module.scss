@@ -1,12 +1,18 @@
 .Footer {
     padding: 24px 0;
     position: relative;
+    display: flex;
     & p {
-        position: absolute;
-        left: 40%;
         font-size: 18px;
         & button {
             font-size: 18px;
+            padding: 0;
+            font-weight: bold;
         }
+    }
+    & .FooterSocialMedia {
+        position: absolute;
+        right: 0;
+        top: 12px;
     }
 }

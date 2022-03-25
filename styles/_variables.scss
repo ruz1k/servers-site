@@ -1,12 +1,23 @@
+/// Body
+$app-font-family: 'Open Sans', sans-serif;
+$app-font-size: 16px;
+$app-font-weight: 400;
+$app-bg: #efefef;
+$app-color: #092433;
+
 /// Headings
-$font-size-h1: 56px; 
+$font-size-h1: 48px;
 $font-size-h2: 40px;
 $font-size-h3: 32px;
 $font-size-h4: 28px;
 $font-size-h5: 24px;
+$headings-margin: 0;
 
 /// Buttons
-
 $button-border: none;
 $button-bg: none;
 $button-outline: none;
+$button-cursor: pointer;
+
+/// Image
+$img-object-fit: cover;

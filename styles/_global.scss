@@ -1,18 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;600;900&family=Poppins:wght@300;500;600;700&display=swap');
-@import "~video-react/styles/scss/video-react";
-@import "../styles/variables";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
+@import '../styles/variables';
 
 body {
-    font-family: 'Mulish', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    background: #efefef;
+    font-family: $app-font-family;
+    font-weight: $app-font-weight;
+    font-size: $app-font-size;
+    background: $app-bg;
+    color: $app-color;
 }
 
 button {
     border: $button-border;
     outline: $button-outline;
     background: $button-bg;
+    cursor: $button-cursor;
 }
 
 h1 {
@@ -33,4 +34,17 @@ h4 {
 
 h5 {
     font-size: $font-size-h5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: $headings-margin;
+}
+
+img {
+    object-fit: $img-object-fit;
 }

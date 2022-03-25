@@ -1,6 +1,36 @@
+@import '../../styles/mixins';
+
 .HeadingBlock {
     padding: 0 0 32px;
+    display: flex;
+    position: relative;
+    margin-bottom: 100px;
+
     & h1 {
-        margin-bottom: 80px;
+        max-width: 520px;
+        margin-bottom: 24px;
+    }
+    & .HeadingBlockBenefitsBlock {
+        max-width: 400px;
+        padding: 24px;
+        background: #fff;
+        border-radius: 20px;
+        position: absolute;
+        right: 0;
+        top: 16px;
+        & li {
+            margin-bottom: 16px;
+        }
+        & ul {
+            margin: 0 0 48px;
+            padding: 0px 16px;
+        }
+    }
+
+    & .HeadingBlockTextContent {
+        & p {
+            font-size: 24px;
+            max-width: fit-content;
+        }
     }
 }

@@ -1,0 +1,14 @@
+@mixin submitButton($selector) {
+    #{$selector} {
+        background: #092433;
+        border-radius: 15px;
+        color: #fff;
+        padding: 16px;
+        font-size: 16px;
+        width: -webkit-fill-available;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+}
