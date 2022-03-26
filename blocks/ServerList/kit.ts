@@ -19,7 +19,7 @@ export const data = [
         id: 'server 3',
         vCPU: 8,
         RAM: 64,
-        SSD: 384,
+        SSD_NVME: 384,
         price: 17000,
         people_using: 30,
     },

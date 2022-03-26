@@ -42,9 +42,9 @@ const ServerList = () => (
                     <div className={styles.ServerListBlockItemSSD}>
                         <label>
                             <SSDIcon width={24} height={24} />
-                            SSD:
+                            {item.SSD_NVME ? 'SSD NVME' : 'SSD'}:
                         </label>
-                        <span>{item.SSD}</span>
+                        <span>{item.SSD_NVME ? item.SSD_NVME : item.SSD}</span>
                     </div>
 
                     <div className={styles.ServerListBlockItemPeopleUsing}>
