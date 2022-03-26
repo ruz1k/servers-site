@@ -14,9 +14,9 @@ const ServerList = () => (
     <div className={styles.ServerListBlock}>
         <h2>Список серверов</h2>
         <p>
-            На базе лицензионной Windows Server 2012\2016, подходит для
+            На базе лицензионной Windows Server 2012/2016/2019, подходит для
             совместной работы в 1С, CRM , с общими документами и других
-            программ. Сервера производства HP и Supermicro, c твердотельными
+            программ. Сервера производства Supermicro, c твердотельными
             серверными дисками intel. Защищены межсетевыми экранами, антивирусом
             Касперского. Находятся в дата-центре Ростелекома.
         </p>
@@ -44,7 +44,7 @@ const ServerList = () => (
                             <SSDIcon width={24} height={24} />
                             SSD:
                         </label>
-                        <span>{item.RAM}</span>
+                        <span>{item.SSD}</span>
                     </div>
 
                     <div className={styles.ServerListBlockItemPeopleUsing}>

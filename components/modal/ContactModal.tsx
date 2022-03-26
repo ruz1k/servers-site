@@ -11,7 +11,8 @@ const ContactModal = ({ text }: ContactModal) => (
     <Modal customClassName={styles.ContactModal} triggerButton={text}>
         <h3>Контакты</h3>
         <p>
-            Связаться с нами вы можете различными образами представленными ниже
+            Готовность терминального сервера в течение часа после запроса.
+            Связаться с нами вы можете различными образами представленными ниже.
         </p>
         <SocialMedia customClassNames={styles.HelperModalSocial} />
     </Modal>
