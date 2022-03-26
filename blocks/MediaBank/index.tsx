@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 
-import { serverImg, terminal } from '../../public';
+import { serverImg, terminal, dataCenter } from '../../public';
 import styles from './MediaBank.module.scss';
 
 import { Modal } from '../../components';
@@ -24,9 +24,18 @@ const MediaBank = () => {
                     <Image
                         onClick={() => changeVisible(serverImg)}
                         src={serverImg}
+                        width={serverImg.width}
                         alt="server image"
                     />
                     <p>Сервер в дата-центре.</p>
+                </div>
+                <div className={styles.MediaBankBlockItem}>
+                    <Image
+                        onClick={() => changeVisible(dataCenter)}
+                        src={dataCenter}
+                        alt="data center image"
+                    />
+                    <p>Серверная</p>
                 </div>
                 <div className={styles.MediaBankBlockItem}>
                     <Image

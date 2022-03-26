@@ -10,8 +10,8 @@
     & .MediaBankBlockItem {
         margin-right: 32px;
         & img {
-            max-width: 600px !important;
-            max-height: 300px !important;
+            max-width: 379px !important;
+            max-height: 285px !important;
             border-radius: 15px;
             cursor: zoom-in;
         }
@@ -19,6 +19,9 @@
             padding-top: 4px;
             font-size: 14px;
             opacity: 0.5;
+        }
+        &:last-child {
+            margin-right: 0;
         }
     }
 }
@@ -29,10 +32,32 @@
     height: 100% !important;
 }
 
+@media screen and (max-width: 1200px) {
+    .MediaBankBlock {
+        flex-flow: wrap;
+        & .MediaBankBlockItem {
+            & img {
+                max-width: 360px !important;
+                max-height: 300px !important;
+                border-radius: 15px;
+                cursor: zoom-in;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .MediaBankBlock {
+        & .MediaBankBlockWrapper {
+            flex-flow: wrap;
+        }
+        flex-flow: wrap;
         & .MediaBankBlockItem {
             margin-right: 32px;
+            margin-bottom: 16px !important;
+            &:nth-child(2n + 2) {
+                margin-right: 0;
+            }
             & img {
                 max-width: 360px !important;
                 max-height: 300px !important;

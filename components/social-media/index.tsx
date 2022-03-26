@@ -2,7 +2,12 @@ import { memo } from 'react';
 
 import { redirectToSocial } from '../../utility/redirectFunc';
 
-import { TelegramIcon, WhatsappIcon, PhoneIcon } from '../../assets/icons';
+import {
+    TelegramIcon,
+    WhatsappIcon,
+    PhoneIcon,
+    MailIcon,
+} from '../../assets/icons';
 
 import cn from 'classnames';
 
@@ -36,6 +41,14 @@ const SocialMedia = ({ customClassNames }: SocialMedia) => (
         <div className={styles.ContactBlockSocialItem}>
             <button onClick={() => redirectToSocial('tel: +73833752980')}>
                 <PhoneIcon />
+            </button>
+        </div>
+
+        <div className={styles.ContactBlockSocialItem}>
+            <button
+                onClick={() => redirectToSocial('mailto: info@nskcloud.ru')}
+            >
+                <MailIcon />
             </button>
         </div>
     </div>

@@ -21,6 +21,12 @@
 @media screen and (max-width: 1024px) {
     .Footer {
         display: block;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .Footer {
+        display: block;
 
         & .FooterSocialMedia {
             position: relative;
