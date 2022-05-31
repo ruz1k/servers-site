@@ -9,7 +9,7 @@ import { Modal } from '../../components';
 const MediaBank = () => {
     const [modalVisible, setModalVisible] = useState(false);
     const [src, setSrc] = useState({});
-    const changeVisible = (src: StaticImageData) => {
+    const changeVisible = (src?: StaticImageData) => {
         if (src) {
             setSrc(src);
         }
